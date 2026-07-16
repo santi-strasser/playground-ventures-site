@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Playground Ventures</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+<script src="/assets/form.js" defer></script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="dot"></span>Playground Ventures</a>
+    <nav class="site-nav">
+      <a href="/">Home</a>
+      <a href="/services/">Services</a>
+      <a href="/about/">About</a>
+      <a href="/contact/" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:40px;">
+    <div class="wrap">
+      <span class="eyebrow">Contact</span>
+      <h1>Tell us what you're working on.</h1>
+      <p class="lede">Have a brand that needs to move faster, or an innovation team that needs outside energy? We'd like to hear about it.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="wrap">
+      <form class="form-grid w3f-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="f3429bb3-e333-4017-af33-78179c6c9c20">
+        <input type="hidden" name="subject" value="New inquiry from playground-ventures.com">
+        <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off">
+        <div class="form-row">
+          <div>
+            <label for="fname">First Name</label>
+            <input id="fname" name="First Name" required>
+          </div>
+          <div>
+            <label for="lname">Last Name</label>
+            <input id="lname" name="Last Name" required>
+          </div>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div>
+          <label for="company">Company</label>
+          <input id="company" name="Company">
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button class="submit" type="submit">Send</button>
+        <p class="form-status" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>&copy; <span id="y"></span> Playground Ventures LLC</p>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
