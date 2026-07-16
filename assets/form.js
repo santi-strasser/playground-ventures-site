@@ -18,7 +18,7 @@ document.querySelectorAll('form.w3f-form').forEach(function (form) {
       .then(function (data) {
         if (data.success) {
           form.reset();
-          status.textContent = "Thanks — we'll be in touch shortly.";
+          status.textContent = "Thanks – we'll be in touch shortly.";
           status.classList.add('ok');
         } else {
           status.textContent = 'Something went wrong. Please try again.';
